@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 /**
- * 头元素存储于1位置 i节点的左二子位置2*i 右儿子位置2*i+1   父亲位置i/2
+ * 头元素存储于1位置 i节点的左儿子位置2*i 右儿子位置2*i+1   父亲位置i/2
  */
 public class BinaryHeap<T extends Comparable<T>> {
 
@@ -23,10 +23,14 @@ public class BinaryHeap<T extends Comparable<T>> {
      * @param array
      */
     public BinaryHeap(ArrayList<T> array) {
+        if(this.array==null){
+            this.array = new ArrayList<T>();
+            this.array.add(null);
+        }
         currentSize = array.size();
         int i = 1;
         for (T t : array) {//保证结构性
-            this.array.set(i++, t);
+            this.array.add(i++, t);
         }
         //保证堆性 下滤
         for (i = currentSize / 2; i > 0; i--) {
@@ -119,6 +123,19 @@ public class BinaryHeap<T extends Comparable<T>> {
     }
 
     public static void main(String[] args) {
+
+        ArrayList<Integer> array = new ArrayList<>();
+        array.add(10);
+        array.add(11);
+        array.add(18);
+        array.add(3);
+        array.add(7);
+//        array.add(20);
+        array.add(6);
+
+        BinaryHeap<Integer> hs = new BinaryHeap<Integer>(array);
+        System.out.println(hs.array);
+
         int numItems = 1000;
         BinaryHeap<Integer> h = new BinaryHeap<Integer>();
         int i = 37;
