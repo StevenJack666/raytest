@@ -9,7 +9,7 @@ public class ShellSort {
     /**
      * 排序方法
      *
-     * @param arrs 待排序的数组
+     * @param args 待排序的数组
      * @return toString 方便输出
      */
     public static void main(String[] args) {
