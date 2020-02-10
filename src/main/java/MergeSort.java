@@ -1,4 +1,6 @@
 //https://blog.csdn.net/qq_36442947/article/details/81612870
+//https://blog.csdn.net/u014231646/article/details/80267088
+
 public class MergeSort {
     //两路归并算法，两个排好序的子序列合并为一个子序列
     public static void merge(int[] a, int left, int mid, int right) {
