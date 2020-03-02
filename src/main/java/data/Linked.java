@@ -5,9 +5,9 @@ import java.util.List;
 
 /**
  *
- * µ¥Á´±í
- * Ë«Á´±í
- * Ñ­»·Á´±í
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * Ë«ï¿½ï¿½ï¿½ï¿½
+ * Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  *
  * */
 public class Linked  extends LinkedList{
